@@ -1,6 +1,6 @@
 import invariant from 'invariant';
 import warning from 'warning';
-import { effects as sagaEffects } from 'redux-saga';
+import { effects as sagaEffects } from 'redux-saga/dist/redux-saga';
 import { NAMESPACE_SEP } from './constants';
 import prefixType from './prefixType';
 
