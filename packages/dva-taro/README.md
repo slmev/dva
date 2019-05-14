@@ -1,13 +1,36 @@
-# dva
+# dva-taro
+在taro中使用dva
 
-[![NPM version](https://img.shields.io/npm/v/dva.svg?style=flat)](https://npmjs.org/package/dva)
-[![Build Status](https://img.shields.io/travis/dvajs/dva.svg?style=flat)](https://travis-ci.org/dvajs/dva)
-[![Coverage Status](https://img.shields.io/coveralls/dvajs/dva.svg?style=flat)](https://coveralls.io/r/dvajs/dva)
-[![NPM downloads](http://img.shields.io/npm/dm/dva.svg?style=flat)](https://npmjs.org/package/dva)
-[![Dependencies](https://david-dm.org/dvajs/dva/status.svg)](https://david-dm.org/dvajs/dva)
+## 使用
+```
+import Taro, { Component } from '@tarojs/taro';
+import createStore from 'dva-taro';
+import models from './models';
 
-Official React bindings for dva, with react-router@4.
+const store = createStore({
+  initialState: {},
+  models: models,
+  onError(err) {
+    err.preventDefault();
+    console.error(err.message);
+  },
+});
 
+class App extends Component {
+
+  ...
+
+  render () {
+    return (
+      <Provider store={store}>
+        <Index />
+      </Provider>
+    )
+  }
+}
+
+Taro.render(<App />, document.getElementById('app'))
+```
 ## LICENSE
 
 MIT
