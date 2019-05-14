@@ -1,6 +1,6 @@
 {
   "name": "dva-core-taro",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "修改dva-core引入redux-saga方式，以解决taro编译后导致无法解析到redux-saga文件的问题",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -21,7 +21,7 @@
     "url": "https://github.com/slmev/dva/issues"
   },
   "scripts": {
-    "babelBuild": "npx babel src --out-dir lib"
+    "babelBuild": "babel src --out-dir lib"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
@@ -37,24 +37,12 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-proposal-decorators": "^7.0.0",
-    "@babel/plugin-proposal-do-expressions": "^7.0.0",
-    "@babel/plugin-proposal-export-default-from": "^7.0.0",
-    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
-    "@babel/plugin-proposal-function-bind": "^7.0.0",
-    "@babel/plugin-proposal-function-sent": "^7.0.0",
-    "@babel/plugin-proposal-json-strings": "^7.0.0",
-    "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
-    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
-    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
-    "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
-    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-syntax-import-meta": "^7.0.0",
-    "@babel/plugin-transform-destructuring": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/plugin-transform-block-scoping": "^7.4.4",
+    "@babel/plugin-transform-parameters": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
     "redux": "^4.0.1"
   },
   "files": [
@@ -62,5 +50,10 @@
     "src",
     "index.js",
     "saga.js"
+  ],
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
   ]
 }
