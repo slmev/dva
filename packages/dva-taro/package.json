@@ -1,6 +1,6 @@
 {
   "name": "dva-taro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "在taro中使用dva",
   "main": "lib/index.js",
   "repository": {
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
-    "dva-core-taro": "1.2.0",
+    "dva-core-taro": "1.2.2",
     "dva-loading": "^3.0.3",
     "redux-logger": "^3.0.6"
   },
