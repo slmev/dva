@@ -18,11 +18,13 @@
     "url": "https://github.com/slemv/dva/issues"
   },
   "scripts": {
-    "babelBuild": "babel src --out-dir lib"
+    "build": "babel src --out-dir lib"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
-    "dva-core-taro": "1.2.0"
+    "dva-core-taro": "1.2.0",
+    "dva-loading": "^3.0.3",
+    "redux-logger": "^3.0.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
