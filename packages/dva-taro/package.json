@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/slemv/dva/issues"
   },
+  "scripts": {
+    "babelBuild": "babel src --out-dir lib"
+  },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
     "dva-core-taro": "1.2.0"
